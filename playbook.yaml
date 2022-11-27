@@ -39,3 +39,8 @@ service:
 name: tomcat9
 state: started
 enabled: yes
+
+- name: "restart tomcat service post deployment"
+service:
+name: tomcat9
+state: restarted
